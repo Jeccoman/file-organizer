@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The Advanced File Organizer is a comprehensive shell script-based system designed to help users efficiently manage, organize, and maintain their files. This project provides a suite of tools for file organization, backup management, file searching, storage reporting, and long-term file compression.
+File Organizer to help users on managing, organize, and maintain their files. This project provides a suite of tools for file organization, backup management, file searching, storage reporting, and long-term file compression.
 
 ## Features
 
@@ -43,43 +43,19 @@ The Advanced File Organizer is a comprehensive shell script-based system designe
 
 ## Configuration
 
-You can customize the behavior of the Advanced File Organizer by editing the `config.sh` file:
+You can customize the behavior of the File Organizer by editing the `config.sh` file:
 
 - `BASE_DIR`: Set the base directory for file organization
 - `LOG_FILE`: Specify the location of the log file
 - `MAX_BACKUPS`: Set the maximum number of backups to keep
 - `FILE_TYPES`: Define file extensions and their corresponding directories
 
-## Script Descriptions
 
-- `main.sh`: The main interface for interacting with the system
-- `config.sh`: Contains configuration settings
-- `utils.sh`: Provides utility functions used across other scripts
-- `organize_files.sh`: Organizes files based on their extensions
-- `backup.sh`: Creates and manages backups
-- `restore_backup.sh`: Restores files from a selected backup
-- `search_files.sh`: Searches for files within the organized structure
-- `generate_report.sh`: Generates storage usage reports
-- `compress_files.sh`: Compresses older files for long-term storage
 
-## Best Practices
+## Usage
 
 1. Regularly organize your files to maintain an efficient file structure.
 2. Create backups before performing any major file operations.
 3. Generate storage reports periodically to keep track of your disk usage.
 4. Use the file compression feature for files that are accessed infrequently to save space.
 
-## Future Enhancements
-
-- Implement a graphical user interface (GUI) for easier interaction
-- Add support for cloud storage integration (e.g., Google Drive, Dropbox)
-- Implement file deduplication to save storage space
-- Add scheduling capabilities for automatic organization and backups
-
-## Contributing
-
-Contributions to the Advanced File Organizer project are welcome! Please feel free to submit pull requests or open issues to suggest improvements or report bugs.
-
-## License
-
-This project is open-source and available under the MIT License.

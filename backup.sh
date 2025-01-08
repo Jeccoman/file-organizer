@@ -12,8 +12,7 @@ create_backup() {
     
     tar -czf "$backup_file" -C "$BASE_DIR" .
     log_message "Created backup: $backup_file"
-    
-    # Remove old backups if exceeding MAX_BACKUPS
+
     local backup_count=$(ls -1 "$backup_dir"/backup_*.tar.gz 2>/dev/null | wc -l)
     if [ "$backup_count" -gt "$MAX_BACKUPS" ]; then
         local oldest_backup=$(ls -1t "$backup_dir"/backup_*.tar.gz | tail -n 1)
